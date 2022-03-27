@@ -3,17 +3,30 @@
 
 	<meta charset="utf-8">
   	<meta name="viewport" content="width=device-width, initial-scale=1">
+	
+  	<!-- fontawesome library -->
+	<script src="https://kit.fontawesome.com/d082e505a5.js" crossorigin="anonymous"></script>
 
-	<link rel="stylesheet" href="libraries/fontawesome/css/all.css">
-	<link rel="stylesheet" href="libraries/bootstrap.css">
-	<link rel="stylesheet" href="custom.css">
+	<!-- custom.css -->	
+	<link rel="stylesheet" href="custom.css"> 
+
+	<!-- Latest compiled and minified CSS -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+
+	<!-- jQuery library -->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+
+	<!-- Popper JS -->
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+
+	<!-- Latest compiled JavaScript -->
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
 	
-	<script src="libraries/jquery.js"></script>
-	<script src="libraries/bootstrap.js"></script>
-	<script src="libraries/popper.js"></script>
-	
+	<!-- javascript AOS library -->
+	<link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+
 </head>
-<body class="" style="overflow:scroll;height:auto" >
+<body class="" style="" data-spy="scroll" data-target=".navbar" data-offset="50">
 	
 	<!--============ NAVBAR =============-->
 	
@@ -21,7 +34,7 @@
 		
 		<a class="navbar-brand" href="#" style="margin-left:30px;"> <i class="fa-solid fa-code"></i> </a>
 		
-		<button style="border:none;" class="btn" type="button" data-toggle="collapse" data-target="#hood" id="menu"> <i class="fa-solid fa-bars fa-xl"></i> </button>
+		<button id="menu" style="border:none;" class="btn" type="button" data-toggle="collapse" data-target="#hood"> <i class="fa-solid fa-bars fa-xl expand-lg"></i> </button>
 		<div class="collapse navbar-collapse justify-content-end" id="hood">
 			<br>
 			<ul class="navbar-nav " style="">
@@ -36,6 +49,7 @@
 		</div>
 		
 	</nav>
+	<br></br>
 	<br></br>
 	
 	<!--============ 1st section =============-->
@@ -57,7 +71,8 @@
 				<div class="row">
 					<div class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12">
 						
-						<button class="btn btn-outline-primary font-italic font-weight-bold">Read CV</button>
+						<a class="btn btn-outline-primary font-italic font-weight-bold"
+						href="#resume">Read CV</a>
 						
 					</div>
 				</div>
@@ -69,12 +84,13 @@
 	</div>
 	<br></br>
 	<br></br>
+	<br></br>
 
 	<!--============ about me =============-->
 	
 	<div id="aboutme" class="container" style="">
 		<div class="row">
-			<div class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12">
+			<div class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12" data-aos="fade-up">
 				
 				<h1 class="text-center font-italic font-weight-bold" style="color:#ef9273;"> ⎯⎯ &nbsp;ABOUT ME ⎯⎯ </h1>
 				<br>
@@ -86,7 +102,7 @@
 				<br>
 				<div class="row">
 					<div class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 text-center">
-						<button class="btn btn-outline-primary font-italic font-weight-bold">Download CV</button>
+						<a class="btn btn-outline-primary font-italic font-weight-bold" href="#">Download CV</a>
 					</div>
 				</div>
 				
@@ -98,68 +114,103 @@
 	
 	<br></br>
 	<br></br>
+	<br></br>
 	
 	<!--============ skills =============-->
 	
-	<div id="skills" class="container" style="">
+	<div id="skills" class="container" style="" data-aos="fade-up">
+	
+		<!-- heading -->
+		
 		<div class="row">
-			<div class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12" style="">
+			<div class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12" style="margin-bottom:20px;">
 				
 				<h1 class="text-center font-italic font-weight-bold" style="color:#ef9273;"> ⎯⎯&nbsp;SKILLS ⎯⎯ </h1>
 				
 			</div>
+		
+		<!-- skills -->
+		
+			<!-- html -->
+		
+			<div class="col-6 col-sm-6 col-md-6 col-lg-3 col-xl-3 justify-content-center text-center fa-5x" style="margin-top:20px;margin-bottom:20px;">
+				
+				<i class="fa-brands fa-html5"></i>
+				
+			</div>	
 			
-			<div class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 justify-content-center text-center fa-4x" style="margin-top:20px;">
+			<!-- css-->
 			
-				<!-- html -->
+			<div class="col-6 col-sm-6 col-md-6 col-lg-3 col-xl-3 justify-content-center text-center fa-5x" style="margin-top:20px;margin-bottom:20px;">
 				
-					 <i class="fa-brands fa-html5"></i>
-				
-				<!-- css-->
-				
-					 <i class="fa-brands fa-css3-alt"></i>
-				
-				<!-- JAVASCRIPT -->
-				
-					 <i class="fa-brands fa-js"></i>
-				
-				<!-- JQUERY -->
-				
-					
-				
-				<!-- BOOTSTRAP -->
-				
-					 <i class="fa-brands fa-bootstrap"></i>
-				
+				<i class="fa-brands fa-css3-alt"></i>
+			
 			</div>
+			
+			<!-- JAVASCRIPT -->
+			
+			<div class="col-6 col-sm-6 col-md-6 col-lg-3 col-xl-3 justify-content-center text-center fa-5x" style="margin-top:20px;margin-bottom:20px;">
+				
+				<i class="fa-brands fa-js"></i>
+			
+			</div>
+			
+			
+			<!-- JQUERY -->
+				
+			
+			<!-- BOOTSTRAP -->
+			
+			<div class="col-6 col-sm-6 col-md-6 col-lg-3 col-xl-3 justify-content-center text-center fa-5x" style="margin-top:20px;margin-bottom:20px;">
+				
+				<i class="fa-brands fa-bootstrap"></i>
+			
+			</div>
+			
 		</div>
 	</div>
 	
+	<br></br>
 	<br></br>
 	<br></br>
 	
 	<!--============ my projects =============-->
 	
-	<div id="myprojects" class="container" style="">
+	<div id="projects" class="container" style="" data-aos="fade-up">
 		<div class="row">
-			<div class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 text-center">
+		
+			<!-- heading -->
+			
+			<div class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12">
 				
 				<h1 class="text-center font-italic font-weight-bold" style="color:#ef9273;"> ⎯⎯&nbsp; My Projects ⎯⎯ </h1>
-				<br></br>
-				<a class="font-weight-bold" href="#" target="_blank"> - Bootstrap Website Project <i class="fa-solid fa-arrow-up-right"></i> </a>
-				<br></br>
-				<a class="font-weight-bold" href="#" target="_blank"> - My portfolio Website Project <i class="fa-solid fa-arrow-up-right"></i> </a>
-				
+			
 			</div>
+			<br></br>
+			<br></br>
+			
+			<!-- 1st project -->
+			
+			<div class="col-12 col-sm-12 col-md-6 col-lg-6 col-xl-6 text-center" style="margin-top:20px;margin-bottom:20px;">
+				<a class="font-weight-bold d-block" href="#" target="_blank"> - BOOTSTRAP WEBSITE PROJECT &nbsp;<i class="fa-solid fa-arrow-up-right-from-square"></i> </a>
+			</div>
+			
+			<!-- 2nd project -->
+			
+			<div class="col-12 col-sm-12 col-md-6 col-lg-6 col-xl-6 text-center" style="margin-top:20px;margin-bottom:20px;">
+				<a class="font-weight-bold d-block" href="#" target="_blank" style=""> - MY PORTFOLIO WEBSITE PROJECT &nbsp;<i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+			</div>
+			
 		</div>
 	</div>
 	
 	<br></br>
 	<br></br>
+	<br></br>
 	
 	<!--============ resume =============-->
 	
-	<div id="resume" class="container" style="">
+	<div id="resume" class="container" style="" data-aos="fade-up">
 		<div class="row">
 		
 				<!-- heading -->
@@ -168,18 +219,17 @@
 			
 				<h1 class="text-center font-italic font-weight-bold" style="color:#ef9273;"> ⎯⎯&nbsp; Resume ⎯⎯ </h1>
 				<br>
-				<p class="text-center"> Recent bachelor's degree recipient with a background in Information Technology . CNC web developer certification. 
-“I am seeking opportunities to join a company that can help me in enhancing my skills, strengthening my knowledge and realising my potential. I am willing to explore a wide variety of opportunities that can help me gain perspective.” </p>
+				<p class="text-center"> Recently Graduated bachelor's degree recipient in Information Technology Specialization. <br></br>“I am seeking opportunities to join a company that can help me in enhancing my skills, strengthening my knowledge and realising my potential. I am willing to explore a wide variety of opportunities that can help me gain perspective.” </p>
 			
 			</div>
-				
+			
 				<!-- skills -->
 			
 				<!-- myself -->
 			
-			<div class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12" style="margin-top:20px;border-left:2px solid skyblue;margin-left:10px;">
+			<div class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12" style="margin-top:20px;border-left:3px solid skyblue;margin-left:0px;">
 			
-				<h4 class="font-italic font-weight-bold" style="">Myself</h4>
+				<h4 class="font-italic font-weight-bold text-primary" style="">Myself</h4>
 				<br>
 				<p class="font-weight-bold"> - Abhishek Agaskar</p>
 				<br>
@@ -189,9 +239,9 @@
 			<br>
 				<!-- education -->
 				
-			<div class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12" style="margin-top:20px;border-left:2px solid lightgreen;margin-left:10px;">
+			<div class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12" style="margin-top:20px;border-left:3px solid lightgreen;margin-left:0px;">
 				
-				<h4 class="font-italic font-weight-bold">Education</h4>
+				<h4 class="font-italic font-weight-bold text-primary">Education</h4>
 				<br>
 				<p class="font-weight-bold">- B.Sc IT &nbsp;(2018-2021)</p>
 				
@@ -208,9 +258,9 @@
 				
 				<!-- work experince in web dvelopment -->
 				
-			<div class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12" style="margin-top:20px;border-left:2px solid blue;margin-left:10px;">
+			<div class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12" style="margin-top:20px;border-left:3px solid blue;margin-left:0px;">
 				
-				<h4 class="font-weight-bold font-italic">Work Experience In Web Development</h4>
+				<h4 class="font-weight-bold font-italic text-primary">Work Experience In Web Development</h4>
 				<br>
 				<p class="font-weight-bold"> - Fresher</p>
 				
@@ -218,9 +268,9 @@
 				
 				<!-- courses -->
 				
-			<div class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12" style="margin-top:20px;border-left:2px solid red;margin-left:10px;">
+			<div class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12" style="margin-top:20px;border-left:3px solid red;margin-left:0px;">
 				
-				<h4 class="font-italic font-weight-bold ">Courses</h4>
+				<h4 class="font-italic font-weight-bold text-primary">Courses</h4>
 				<br>
 				<p class="font-weight-bold"> - Front End Web Development &nbsp;(2021 - present)</p>
 				<br>
@@ -232,9 +282,9 @@
 				
 				<!-- certificate -->
 				
-			<div class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12" style="margin-top:20px;border-left:2px solid skyblue;margin-left:10px;">
+			<div class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12" style="margin-top:20px;border-left:3px solid skyblue;margin-left:0px;">
 				
-				<h4 class="font-italic font-weight-bold">Certificate</h4>
+				<h4 class="font-italic font-weight-bold text-primary">Certificate</h4>
 				<br>
 				<p class="font-weight-bold"> - Front End Developer</p>
 				<br>
@@ -244,9 +294,9 @@
 				
 				<!-- other work experience -->
 				
-			<div class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12" style="margin-top:20px;border-left:2px solid green;margin-left:10px;">
+			<div class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12" style="margin-top:20px;border-left:3px solid green;margin-left:0px;">
 				
-				<h4 class="font-italic font-weight-bold">Other Work Experience</h4>
+				<h4 class="font-italic font-weight-bold text-primary">Other Work Experience</h4>
 				<br>
 				<p class="font-weight-bold"> - Employee</p>
 				<br>
@@ -258,18 +308,19 @@
 		
 	<br></br>
 	<br></br>
+	<br></br>
 	
 	<!--============= for contact ============-->
 	
 	<!-- heading -->
 	
-	<div id="contact" class="container" style="">
+	<div id="contact" class="container" style="" data-aos="fade-up">
 		<div class="row">
 			<div class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 justify-content-center">
 				
 				<h1 class="text-center font-italic font-weight-bold" style="color:#ef9273"> ⎯⎯&nbsp; For Contact ⎯⎯ </h1>
 				<br>
-				<p class=" text-center"> <i class="fa-solid fa-square-phone"></i> : +917208787015 <br> <i class="fa-solid fa-envelope"></i> : agaskarabhi65@gmail.com</p>
+				<p class=" text-center"> <i class="fa-solid fa-square-phone"></i> : +91 7208787015 <br> <i class="fa-solid fa-envelope"></i> : agaskarabhi65@gmail.com</p>
 				
 				
 			</div>
@@ -291,5 +342,12 @@
 		</div>
 	</div>
 	
+	<!-- AOS library script -->
+
+	<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  	<script>
+    	AOS.init();
+  	</script>
+
 </body>
 </html>
