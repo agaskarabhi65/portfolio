@@ -5,10 +5,11 @@
 
 html{
    scroll-behavior:smooth;
+   overflow-x: hidden;
 }
 
-body{
-   background:#fffffa !important;
+nav{
+	background: linear-gradient(120deg, #1d89f4, #00db78, #f7bf18, #ff4c4c) !important;
 }
 
 /* box shadow for ul in mobile view */
@@ -22,7 +23,6 @@ body{
 	.z1{
 		color:white !important;
 		font-weight:bold !important;
-		underline: orange !important;
 	}
 }
 
