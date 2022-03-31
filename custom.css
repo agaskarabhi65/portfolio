@@ -90,4 +90,8 @@ nav{
 	}
 }
 
-/*  */
+/*  for projects hover  */
+
+#project1, #project2, #project3{
+	cursor: pointer;	
+}
